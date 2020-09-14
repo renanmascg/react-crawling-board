@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FiHome, FiLogOut, FiSearch, FiSettings } from 'react-icons/fi';
-import { Navbar, NavbarContent } from './styles';
+import { Navbar, NavbarContent, Navitem } from './styles';
 import logoImg from '../../assets/logo.png';
 
 const Sidenav: React.FC = () => (
@@ -9,21 +10,21 @@ const Sidenav: React.FC = () => (
       <img src={logoImg} alt="Achaki Logo" />
 
       <ul>
-        <li>
-          <a href="#">
+        <Navitem active={window.location.pathname.includes('/dashboard')}>
+          <Link to="/dashboard">
             <FiHome size={25} />
-          </a>
-        </li>
-        <li>
-          <a href="#">
+          </Link>
+        </Navitem>
+        <Navitem active={window.location.pathname.includes('/search')}>
+          <Link to="/search">
             <FiSearch size={25} />
-          </a>
-        </li>
-        <li>
+          </Link>
+        </Navitem>
+        <Navitem>
           <a href="#">
             <FiSettings size={25} />
           </a>
-        </li>
+        </Navitem>
       </ul>
 
       <a href="#">

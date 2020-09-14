@@ -1,4 +1,9 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { shade } from 'polished';
+
+interface NavitemProps {
+  active?: boolean;
+}
 
 export const Container = styled.div`
   height: 100vh;
@@ -38,30 +43,6 @@ export const NavbarContent = styled.div`
     flex: 1;
     margin-bottom: auto;
     width: 100%;
-    padding: 0 10px;
-
-    li {
-      height: 50px;
-      background: #6078eb;
-      border-radius: 5px;
-
-      & + li {
-        margin-top: 30px;
-      }
-
-      a {
-        padding: 5px;
-        display: flex;
-        width: 100%;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
-      }
-
-      svg {
-        color: #fff;
-      }
-    }
   }
 
   a {
@@ -74,4 +55,45 @@ export const NavbarContent = styled.div`
   }
 `;
 
-export const HomeContent = styled.div``;
+export const Navitem = styled.li<NavitemProps>`
+  height: 50px;
+  transition: background-color 0.2s;
+
+  & + li {
+    margin-top: 30px;
+  }
+
+  &:hover {
+    background: ${shade(0.05, '#cadfff')};
+  }
+
+  ${props =>
+    props.active &&
+    css`
+      background: #6078eb;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+
+      &:hover {
+        background: #6078eb;
+      }
+    `}
+
+  a {
+    padding: 5px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  svg {
+    color: #6078eb;
+
+    ${props =>
+      props.active &&
+      css`
+        color: #fff;
+      `}
+  }
+`;
