@@ -4,13 +4,13 @@ export default createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
     outline: 0
   }
 
   body {
-    background: #FFF;
-    color: #26334A;
+    background: #F4F6F9;
+    color: #3a3a3a;
     -webkit-font-smoothing: antialiased;
   }
 
