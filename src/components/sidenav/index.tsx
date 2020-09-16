@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FiHome, FiLogOut, FiSearch, FiSettings } from 'react-icons/fi';
+import { AiOutlineFileSearch } from 'react-icons/ai';
 import { Navbar, NavbarContent, Navitem } from './styles';
 import logoImg from '../../assets/logo.png';
 
@@ -18,6 +19,11 @@ const Sidenav: React.FC = () => (
         <Navitem active={window.location.pathname.includes('/search')}>
           <Link to="/search">
             <FiSearch size={25} />
+          </Link>
+        </Navitem>
+        <Navitem active={window.location.pathname.includes('/search')}>
+          <Link to="/search">
+            <AiOutlineFileSearch size={25} />
           </Link>
         </Navitem>
         <Navitem>
