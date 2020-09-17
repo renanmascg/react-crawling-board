@@ -8,9 +8,9 @@ import {
   GroupInfo,
   NewestResearch,
   Title,
-  Info,
 } from './styles';
 import Sidenav from '../../components/sidenav';
+import Info from '../../components/Info';
 
 const Dashboard: React.FC = () => (
   <Container>
@@ -23,7 +23,7 @@ const Dashboard: React.FC = () => (
         </Title>
       </Header>
       <GroupInfo>
-        <Info>
+        <Info width={250}>
           <p>Suas Pesquisas</p>
           <div>
             <p>1500</p>
@@ -31,7 +31,7 @@ const Dashboard: React.FC = () => (
           </div>
         </Info>
 
-        <Info blue>
+        <Info width={250} blue>
           <p>Total Consultas</p>
           <div>
             <p>10</p>
@@ -39,7 +39,7 @@ const Dashboard: React.FC = () => (
           </div>
         </Info>
 
-        <Info cyan>
+        <Info width={250} cyan>
           <p>Consultas Remanescentes</p>
           <div>
             <p>10</p>
@@ -47,7 +47,7 @@ const Dashboard: React.FC = () => (
           </div>
         </Info>
 
-        <Info green>
+        <Info width={250} green>
           <p>Total Usuários</p>
           <div>
             <p>10</p>

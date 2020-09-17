@@ -21,8 +21,8 @@ const Sidenav: React.FC = () => (
             <FiSearch size={25} />
           </Link>
         </Navitem>
-        <Navitem active={window.location.pathname.includes('/search')}>
-          <Link to="/search">
+        <Navitem active={window.location.pathname.includes('/results')}>
+          <Link to="/results">
             <AiOutlineFileSearch size={25} />
           </Link>
         </Navitem>

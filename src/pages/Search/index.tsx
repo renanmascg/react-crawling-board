@@ -15,7 +15,6 @@ const Search: React.FC = () => {
             <Input name="enterprise" placeholder="Digite a Empresa" />
             <Button type="submit">Add</Button>
           </div>
-
           <ChipsArea>
             <Chip>
               <p>BANCO VOTORANTIM</p>
