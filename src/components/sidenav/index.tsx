@@ -26,10 +26,10 @@ const Sidenav: React.FC = () => (
             <AiOutlineFileSearch size={25} />
           </Link>
         </Navitem>
-        <Navitem>
-          <a href="#">
+        <Navitem active={window.location.pathname.includes('/settings')}>
+          <Link to="/settings">
             <FiSettings size={25} />
-          </a>
+          </Link>
         </Navitem>
       </ul>
 
