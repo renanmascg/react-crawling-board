@@ -64,6 +64,9 @@ const Results: React.FC = () => {
           <Result />
           <Result />
           <Result />
+          <Result />
+          <Result />
+          <Result />
         </SearchResults>
       </Content>
     </Container>

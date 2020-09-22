@@ -45,8 +45,7 @@ export const SearchBar = styled.div`
 `;
 
 export const SearchResults = styled.div`
-  padding: 10px 0px 0px 10px;
-  height: 100%;
+  padding: 0 30px 10px 20px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -61,7 +60,7 @@ export const Result = styled.div`
   height: 320px;
   background: #c9deff;
   border-radius: 10px;
-  margin: 10px 0 0 10px;
+  margin: 40px 0 0 10px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
