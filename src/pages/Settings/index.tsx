@@ -1,5 +1,4 @@
 import React from 'react';
-import { FiSearch } from 'react-icons/fi';
 import { AiFillCloseCircle } from 'react-icons/ai';
 import { Container, Content, Title, Form, Chip, ChipsArea } from './styles';
 import Sidenav from '../../components/sidenav';
