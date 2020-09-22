@@ -1,19 +1,31 @@
 import React from 'react';
 import { useRouteMatch } from 'react-router-dom';
 import { Pie, ChartComponentProps } from 'react-chartjs-2';
+import { GrDislike, GrLike } from 'react-icons/gr';
 import {
   Container,
   Content,
+  Title,
   ChartsInfo,
   ChartstTitle,
   ChartsBody,
   NumberInfo,
+  NewsCards,
+  Card,
+  CardTitle,
+  CardBody,
+  CardTags,
+  CardButtons,
+  CardButton,
 } from './styles';
 import Sidenav from '../../components/sidenav';
+import newsJson from '../../utils/return.json';
 
 interface IParams {
   id: string;
 }
+
+const resultExample = newsJson.organic_results;
 
 const ResultQuery: React.FC = () => {
   const { id } = useRouteMatch<IParams>().params;
@@ -78,6 +90,42 @@ const ResultQuery: React.FC = () => {
             </div>
           </ChartsBody>
         </ChartsInfo>
+        <Title>
+          <h1>Noticias Encontradas</h1>
+          <hr />
+        </Title>
+        <NewsCards>
+          {resultExample.map(result => {
+            return (
+              <Card>
+                <CardTitle href={result.link} target="__blank">
+                  {result.title}
+                </CardTitle>
+                <CardBody>
+                  <span>Snippet:</span>
+                  {result.snippet}
+                </CardBody>
+                <CardTags>
+                  <hr />
+                  <div>
+                    <p>Tags:</p>
+                    <p>QUEIMADAS</p>
+                    <p>ALIMENTAÇÃO</p>
+                    <p>QUEIMADAS</p>
+                  </div>
+                </CardTags>
+                <CardButtons>
+                  <CardButton type="button">
+                    <GrLike size={20} />
+                  </CardButton>
+                  <CardButton type="button">
+                    <GrDislike size={20} />
+                  </CardButton>
+                </CardButtons>
+              </Card>
+            );
+          })}
+        </NewsCards>
       </Content>
     </Container>
   );

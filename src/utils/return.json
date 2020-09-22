@@ -1,0 +1,528 @@
+{
+  "search_metadata": {
+    "id": "5f69af5b0cdedf0e29809564",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/d718848956d2715b/5f69af5b0cdedf0e29809564.json",
+    "created_at": "2020-09-22 08:01:31 UTC",
+    "processed_at": "2020-09-22 08:01:31 UTC",
+    "google_url": "https://www.google.com.br/search?q=bitcoin&oq=bitcoin&uule=w+CAIQICIGQnJhemls&hl=pt&gl=br&sourceid=chrome&ie=UTF-8",
+    "raw_html_file": "https://serpapi.com/searches/d718848956d2715b/5f69af5b0cdedf0e29809564.html",
+    "total_time_taken": 1.41
+  },
+  "search_parameters": {
+    "engine": "google",
+    "q": "bitcoin",
+    "location_requested": "Brazil",
+    "location_used": "Brazil",
+    "google_domain": "google.com.br",
+    "hl": "pt",
+    "gl": "br",
+    "device": "desktop"
+  },
+  "search_information": {
+    "organic_results_state": "Results for exact spelling",
+    "total_results": 456000000,
+    "time_taken_displayed": 0.45,
+    "query_displayed": "bitcoin"
+  },
+  "ads": [
+    {
+      "position": 1,
+      "block_position": "top",
+      "title": "Bitcoin - A Carteira Mais Segura",
+      "link": "https://ofertas.mercadolivre.com.br/ripio",
+      "displayed_link": "ofertas.mercadolivre.com.br/bitcoin/ripio",
+      "tracking_link": "https://www.google.com.br/aclk?sa=l&ai=DChcSEwisqLmApvzrAhVCCecKHRQDCLcYABAAGgJwdg&ae=2&sig=AOD64_1rXNvlxVK1Gcuym1ViRrIId5r8SA&q&adurl",
+      "description": "Alta tecnologia para trazer as melhores oportunidades. Conheça Ripio.com. Segurança e facilidade você encontra aqui. Negociar Com agilidade. Compre BTC seguro. Cadastre-se Já! Ethereum e Dai. Carteira de Criptomoedas."
+    },
+    {
+      "position": 2,
+      "block_position": "top",
+      "title": "Bitcoin QR Code Generator",
+      "link": "https://br.qr-code-generator.com/solutions/bitcoin-qr-code/",
+      "displayed_link": "br.qr-code-generator.com/",
+      "tracking_link": "https://www.google.com.br/aclk?sa=l&ai=DChcSEwisqLmApvzrAhVCCecKHRQDCLcYABACGgJwdg&ae=2&sig=AOD64_31-ucYffdZO9sl3DWzrHODr3fAog&q&adurl",
+      "description": "Acompanhe e analise seus códigos QR com o QR Code Generator PRO."
+    },
+    {
+      "position": 3,
+      "block_position": "bottom",
+      "title": "Bitcoin - Negociação Rápida - Negociação rápida online",
+      "link": "https://www.novadax.net/br2-sign-up?s=Palmax",
+      "displayed_link": "www.novadax.net/",
+      "tracking_link": "https://www.google.com.br/aclk?sa=l&ai=DChcSEwisqLmApvzrAhVCCecKHRQDCLcYABABGgJwdg&ae=2&sig=AOD64_2M_gUmp9FKWzBdVI6zp-xllTz-Aw&q&adurl",
+      "description": "Cadastre-se agora para ganhar o bônus de R$10. A melhor plataforma de negociação de criptomoedas. A plataforma mais segura. Destaques: Plataforma Simples E Amigável, Benefícios Exclusivos, Segurança E Agilidade, Time De Especialistas Global."
+    }
+  ],
+  "knowledge_graph": {
+    "title": "Bitcoin",
+    "type": "Criptomoeda",
+    "header_images": [
+      {
+        "image": "data:image/png;base64,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",
+        "source": "https://www.coinbase.com/pt/buy-bitcoin"
+      },
+      {
+        "image": "data:image/jpeg;base64,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",
+        "source": "https://www.infomoney.com.br/colunistas/terraco-economico/bitcoin-e-os-meios-de-pagamento-afinal-criptomoedas-sao-realmente-moedas/"
+      },
+      {
+        "image": "data:image/jpeg;base64,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",
+        "source": "https://foxbit.com.br/o-que-e-bitcoin/"
+      },
+      {
+        "image": "data:image/jpeg;base64,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",
+        "source": "https://www.tororadar.com.br/blog/o-que-e-bitcoin-e-como-funciona"
+      },
+      {
+        "image": "data:image/jpeg;base64,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",
+        "source": "https://cointimes.com.br/o-que-e-bitcoin-cotacao-e-como-funciona/"
+      },
+      {
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwvMU443N7RN-lNsSg319zOwR2GzkYdbgq4RiDmLy8_g&s",
+        "source": "https://www.infomoney.com.br/mercados/bitcoin-dispara-13-em-dois-dias-e-supera-us-11-mil-apos-quase-um-ano-o-que-explica-esse-movimento/"
+      },
+      {
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDMQTWKNuN7UDkQCKn1XDPhM7KZevd5tV5foL-kdaBWg&s",
+        "source": "https://cointelegraph.com.br/tags/bitcoin"
+      },
+      {
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4FvmxcTgIPM3lxoXk8MY9oif2a_x-9_5jsEfNo8WRfw&s",
+        "source": "https://www.politize.com.br/bitcoin-o-que-e-como-usar/"
+      },
+      {
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu6Bqpu7j4ZTNoSXy4hGxnFzDTrVqCiivDg9_xZ1FK6g&s",
+        "source": "https://www.infomoney.com.br/mercados/por-que-o-bitcoin-esta-perto-da-maxima-historica-em-reais-enquanto-ainda-esta-bem-longe-do-recorde-em-dolares/"
+      }
+    ],
+    "description": "Bitcoin é uma criptomoeda descentralizada ou um dinheiro eletrônico para transações ponto-a-ponto apresentada em 2008, na lista de discussão The Cryptography Mailing por um programador ou grupo ...",
+    "source": {
+      "name": "Wikipédia",
+      "link": "https://pt.wikipedia.org/wiki/Bitcoin"
+    },
+    "moedas": "Saídas não gastas de transações denominadas em qualquer múltiplo de um satoshis",
+    "sub_unidade": "satoshi",
+    "código_iso_4217": "XBT",
+    "usado": "Mundo",
+    "símbolo": "BTC, XBT, ₿ (U+20BF,)",
+    "fundador": "Satoshi Nakamoto",
+    "itens_também_pesquisados": [
+      {
+        "name": "Ethereum",
+        "link": "https://www.google.com.br/search?hl=pt&gl=br&q=Ethereum&stick=H4sIAAAAAAAAAONgFuLSz9U3MC0wKCqqUOIGsQ0NLJLyjCq0-Jzzc3Pz84IzU1LLEyuLF7FyuJZkpBallubuYGUEADT9zSw5AAAA&sa=X&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQxA0wN3oECAUQBQ",
+        "source": "common",
+        "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAY1BMVEX///+MjIwzMzM5OTkVFRXr6+v19fWdnZ38/Pz5+fmioqGQkJAAAACYmJjw8PCGhoazs7Ph4eEQEBDIyMjAwMCoqKdwcHCAgIDQ0NAsLCxqamoiIiJSUlJFRUW5ubljY2NaWlpykWjzAAAB5UlEQVRYhe2W0ZKkIAxFQUUQFERlwHGa6f//yg3QMr1Vuy/CPq23CktQTmICEYRu3bp162+SpBLIfNThaLu4KiCBm7YGZ1O4OXg5p7cYN00ni0EGB9D+WcrRNoKa4ngLnECl8YZIYyxaAB20hBMiLfD3EVzqStY3x0I9gbEcZfHWyn7tbdt2HaD2br3KYR+Ppm0TCFDLwa6S5mb/AY3LfNkjyH7XJNA4KsSGqyTvEHkeAFrGB0F+usoBhyaJ1n0fxw2Rr5IlKa2FwEwYITwuRXXSKaVgl3lI/uVQJ8HmV/TZlW9/ptKmPS5n7JSOha1G1fah1OJyTiz+jxocWAOdrgJCq6nDufUvVes4hEQtUEElzHK1QLQUtJkQ4X6zGxyEKJu3OMr8HM9FBK3pJZ16sP/gD0OY9wy5+T03SvccvmoggkABw0bq4NWgSD+FuVjEq+6jgZALD7MNJUTMruc/WzrajbmKRzwFzYBJE6piqESf4WbVr68ObQMQhebEOSlq4iA7nGP09aYynMejcQwajy/J1IsegS29/gbi+acex7LJbAi95uYe/TOoh4/R2ZlskoDfzpwgZBki4W5d0fCUb6C3I5icaPptufOi+5Cfifo8igZKU4XzdA6Pw6jU+fGtW7f+U/0C7twVwyclb3cAAAAASUVORK5CYII="
+      },
+      {
+        "name": "Litecoin",
+        "link": "https://www.google.com.br/search?hl=pt&gl=br&q=Litecoin&stick=H4sIAAAAAAAAAONgFuLSz9U3MC0wKCqqUAKzS0xNTHJMtPic83Nz8_OCM1NSyxMrixexcvhklqQm52fm7WBlBACyKKy9OAAAAA&sa=X&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQxA0wN3oECAUQBw",
+        "source": "common",
+        "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAY1BMVEU0XZ3///8VTZXd4uwoVpouWZuVpcUgUpgARZIRS5WvutLK0eEaT5YxW5z19vnV2+dpgrGntM54jrheeqzs7vS1wNZUcqiLncC/yNtwh7RMbaWfrcqDl73j5+9YdqoANow/ZKEdNu1YAAADR0lEQVRYha2Y25qrIAxGKQURBTy3M+200/d/yg1qBTRBO9/+b8VFEkIIkNOO+qq0qvq9cQT/ZMqs1rlUwkrJXNdZaT4HmaGminESiDNF6wFjwaBzq0QEWWBCtefDoKqjIGVm0a46BOrrFGZCfW9jvwE1e5gJ1eyAzEXsY5zE06RAlTpgzmyUqnDQII9inOSAgRoKzy1mra2VDQxqYHtYW0wa2jUpDLkHDbA92o8wm5kC75ZhFRIfdl3Gfm1XVFZrkFEwh6hyAW1cc5/NCnTB1p36MGjgM3/GoDuWh/x74VRgEEUTgno40G6cD2fGYJP7AFSjCZ37nXCDB802E9xoJ31bOD2W9rRaQB1qELsvoAENY/cG4QYR6svhNzrbOIgg+fGezS8+PhtvJ5DBh7CfhVNiGUumrLSgAq9lQVpf4cUf5XKEpEIdpnWq4vHagbZ7Ohow65GsedRYUMJ5ViygJuHZGAKCZb6T9KfOE9qxfsbMgvDtEaR1YmWdbAzIiaNz2XnecjWNJ+KtLShHv1J/4LS2H2lx20l+Io+E0X7xxdVm1AWPk+xJhS7amPmB0O1vpSpSonktvmIQuv3d2BIHaRqf7udnItgoSDNK/Dl0Ml8/JNmlYCB5y8K+rKFw/xaBoGCLRxydlFOTbLCB5Z9qZ+BYohS9XeihhBRurxpvFXBUr5WDW0SYvuh+g7Te7740uGlfF8k4867tc8ZNC5QRHaV14pB5aywjcGEL0jpRsN4aCxtcanPv2S1Z00aNpRYs/tpnQGqvzpqKP3gcMd8dFvuezccRVEbDai3YRqvR8wEJ5Il++RBds61esWfzkQ30oUG1BhWXpqWJ2IabQhepQNH57duaTcppluacXnozK9j6rav1WlHFCFu/da6IIYVZnd9RM7pqj2niNu3UBZ7F7XHcsOsORYwywaz8copBRvlZ2PVxTqkNPNtcIaJkYjSpwPjtpebT6+McTOCahV4gE5LgxQ+9QuL2IFdR591+DQvsQS/H/++6/skDwiX5gGB1l4eeNO7r//72yFIfeGRxkepSVh1+9hlRLdLIcEFbuOihT2NFJxUL+wLNmZJd8dnT2MQqs5rndHqsozn/22Pdosf0fPjYG/cPNy4kHZ8akGcAAAAASUVORK5CYII="
+      },
+      {
+        "name": "Dólar dos Estados Unidos",
+        "link": "https://www.google.com.br/search?hl=pt&gl=br&q=d%C3%B3lar+americano&stick=H4sIAAAAAAAAAONgFuLSz9U3MC0wKCqqUOIAsS3zCtO0-Jzzc3Pz84IzU1LLEyuLF7EKpBzenJNYpJCYm1qUmZyYl7-DlREApA-FuT4AAAA&sa=X&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQxA0wN3oECAUQCQ",
+        "source": "common",
+        "image": "data:image/jpeg;base64,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"
+      },
+      {
+        "name": "Protocolo de Pagame...",
+        "link": "https://www.google.com.br/search?hl=pt&gl=br&q=xrp&stick=H4sIAAAAAAAAAONgFuLSz9U3MC0wKCqqUOIEsc0tiiqLtfic83Nz8_OCM1NSyxMrixexMlcUFexgZQQA1OTUGDIAAAA&sa=X&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQxA0wN3oECAUQCw",
+        "source": "common",
+        "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEcAAAAwCAMAAAB0SZdUAAAApVBMVEX///8qMz55fIE7QktITlacnqLb292ipaiytLbJysz5+fkAks3ExshzdnwtNUAAn9tTWF+rrbAYm9IAYp0jLTi5u73i4uPs7e3i7/d1ud8FGCjy+PwAhMJmanC31+upyuHX6vYAi8gUjMMAerfG2eiFiI2UlpoQHixnuuRNqdgvlcp1qs5krNaMvt5cYWgEgbpAiboAcqoAWpqlvNIAABsAUJLT3efNu33oAAABX0lEQVRIie2TbW+CMBSFb2mBSaEWLYIiU1Fgb8JQ5///aSvgEg3CSEz2YelJSHsuNw/l3BRASUlJSekPNTOtVs3y27V7Cubz4GdPhNl67y7sIZiQUroML8aLZq2GJzQawnmmNC5WPQ0DOOu1fDZxvN0BcCdZ2C42ADuOwC5AQlKGkobjRxnSOzEvY/oK8LbcvktDME58XRiAcK5z5IKGceqwqOZgYqedoPV4MqEf+2JXp0OwHIuODBB57UBjvjwUMjw0splpGLLUkUzFieOicYTAhVN9N2GWxuVqI09yXCxPS1jX/CeUbkIotp+7G86d84jeqMP9PoSgLMtDcMVBODJzZMp8iKkx3uSDPZu7fSxYSc70CMCYNOlJcnKeVf+mYS3LHAvck13NK+NGL+c8Lcuv81VBOFAHoYmbvl8vx3F6OF57yYGGM+xedWkRNauTPcbxLrMZeQ9hlJSU/ou+AQq2Fosezu/+AAAAAElFTkSuQmCC"
+      },
+      {
+        "name": "Bitcoin Cash",
+        "link": "https://www.google.com.br/search?hl=pt&gl=br&q=Bitcoin+Cash&stick=H4sIAAAAAAAAAONgFuLSz9U3MC0wKCqqUOLVT9c3NEyJLy8pSzbN1uJzzs_Nzc8LzkxJLU-sLF7EyuOUWZKcn5mn4JxYnLGDlREA5AltAT8AAAA&sa=X&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQxA0wN3oECAUQDQ",
+        "source": "common",
+        "image": "data:image/png;base64,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"
+      }
+    ],
+    "itens_também_pesquisados_link": "https://www.google.com.br/search?hl=pt&gl=br&q=Bitcoin&stick=H4sIAAAAAAAAAONgFuLSz9U3MC0wKCqqUEJiawlnJ1vpJ-fn5ubnWRVnpqSWJ1YWL2Jld8osSc7PzNvByggAtk4SkjwAAAA&sa=X&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQMSgAMDd6BAgFEAE",
+    "itens_também_pesquisados_stick": "H4sIAAAAAAAAAONgFuLSz9U3MC0wKCqqUEJiawlnJ1vpJ-fn5ubnWRVnpqSWJ1YWL2Jld8osSc7PzNvByggAtk4SkjwAAAA"
+  },
+  "inline_videos": [
+    {
+      "title": "O QUE É BITCOIN? #1",
+      "link": "https://www.youtube.com/watch?v=RJDVlolZa_U",
+      "thumbnail": "https://i.ytimg.com/vi/RJDVlolZa_U/mqdefault.jpg?sqp=-oaymwEFCNQBEHY&rs=AMzJL3kEdBCSbn2h9xQqgSulZepvn4dPSw",
+      "channel": "Foxbit",
+      "duration": "3:27",
+      "platform": "YouTube",
+      "date": "3 de abr. de 2019"
+    },
+    {
+      "title": "BITCOIN DUMP - E AGORA? - Análise Técnica/Sentimento ...",
+      "link": "https://www.youtube.com/watch?v=lCMLx5-LsVo",
+      "thumbnail": "https://i.ytimg.com/vi/lCMLx5-LsVo/mqdefault.jpg?sqp=-oaymwEFCNQBEHY&rs=AMzJL3moY1Gg7DBxMKWayc1VJo2CaEfwAA",
+      "channel": "Investidor Moderno",
+      "duration": "21:08",
+      "platform": "YouTube",
+      "date": "11 horas atrás"
+    },
+    {
+      "title": "Domingão do Bitcão DeFi Edition Semana DECISIVA para o ...",
+      "link": "https://www.youtube.com/watch?v=bVhAiuU6fOM",
+      "thumbnail": "https://i.ytimg.com/vi/bVhAiuU6fOM/mqdefault.jpg?sqp=-oaymwEFCNQBEHY&rs=AMzJL3k48zFsKSERAc69u_gUiw5t8ownQA",
+      "channel": "Augusto Backes",
+      "duration": "2:56:57",
+      "platform": "YouTube",
+      "date": "1 dia atrás"
+    },
+    {
+      "title": "Como Funciona o Bitcoin e as Criptomoedas - Ótima ...",
+      "link": "https://www.youtube.com/watch?v=RN_AAPpxvUs",
+      "thumbnail": "https://i.ytimg.com/vi/RN_AAPpxvUs/mqdefault.jpg?sqp=-oaymwEFCNQBEHY&rs=AMzJL3lAbDeffh_42gEgfZoMq-k_1GJsGw",
+      "channel": "Dani Edson",
+      "duration": "16:26",
+      "platform": "YouTube",
+      "date": "22 de jul. de 2019"
+    },
+    {
+      "title": "Entenda: o que é Bitcoin? (e onde comprar)",
+      "link": "https://www.youtube.com/watch?v=Hm8R8ntfYAQ",
+      "thumbnail": "https://i.ytimg.com/vi/Hm8R8ntfYAQ/mqdefault.jpg?sqp=-oaymwEFCNQBEHY&rs=AMzJL3loFPFHc3dlte_LYCL87HlgkbgvcQ",
+      "channel": "Crypto Tchaps",
+      "duration": "5:23",
+      "platform": "YouTube",
+      "date": "26 de jun. de 2019"
+    },
+    {
+      "title": "BITCOIN: O que é e como funciona essa criptomoeda?",
+      "link": "https://www.youtube.com/watch?v=zMBT_Udxb9M",
+      "thumbnail": "https://i.ytimg.com/vi/zMBT_Udxb9M/mqdefault.jpg?sqp=-oaymwEFCNQBEHY&rs=AMzJL3kGorGgLbw_K70KZ2inLGKjzQF42Q",
+      "channel": "Cointimes",
+      "duration": "11:25",
+      "platform": "YouTube",
+      "date": "30 de mai. de 2019"
+    },
+    {
+      "title": "Saiba o que é Bitcoin - PT",
+      "link": "https://www.youtube.com/watch?v=1WQYLvbGFC0",
+      "thumbnail": "https://i.ytimg.com/vi/1WQYLvbGFC0/mqdefault.jpg?sqp=-oaymwEFCNQBEHY&rs=AMzJL3muQwyZNtjUvyONritojazN5778Dw",
+      "channel": "Mercado Bitcoin",
+      "duration": "1:45",
+      "platform": "YouTube",
+      "date": "9 de mar. de 2014"
+    },
+    {
+      "title": "BItcoin em correção acentuada, será que teremos mais queda ...",
+      "link": "https://www.youtube.com/watch?v=cZfnbHD5L-Q",
+      "thumbnail": "https://i.ytimg.com/vi/cZfnbHD5L-Q/mqdefault.jpg?sqp=-oaymwEFCNQBEHY&rs=AMzJL3mVMH6TWil0W1EOoFd-VqSD0DeCWg",
+      "channel": "Crypto Tchaps",
+      "duration": "9:21",
+      "platform": "YouTube",
+      "date": "10 horas atrás"
+    },
+    {
+      "title": "Mercado Bitcoin - Como Comprar Bitcoin Fácil 2019",
+      "link": "https://www.youtube.com/watch?v=Y3UxAMSDSgY",
+      "thumbnail": "https://i.ytimg.com/vi/Y3UxAMSDSgY/mqdefault.jpg?sqp=-oaymwEFCNQBEHY&rs=AMzJL3nR5FAXzCkJao989c8fox8flylSLA",
+      "channel": "Academia Digital Invest",
+      "duration": "19:44",
+      "platform": "YouTube",
+      "date": "21 de abr. de 2019"
+    },
+    {
+      "title": "MC PH - Bitcoins (GR6 Filmes) Djay W",
+      "link": "https://www.youtube.com/watch?v=SAuYddl6SGQ",
+      "thumbnail": "https://i.ytimg.com/vi/SAuYddl6SGQ/mqdefault.jpg?sqp=-oaymwEFCNQBEHY&rs=AMzJL3lvbvXPjpGH8hMq47vE_H9UyyWRWw",
+      "channel": "GR6 EXPLODE",
+      "duration": "3:40",
+      "platform": "YouTube",
+      "date": "2 de nov. de 2019"
+    }
+  ],
+  "top_stories_link": "https://www.google.com.br/search?hl=pt&gl=br&q=bitcoin&tbm=nws&source=univ&tbo=u&sa=X&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQt8YBKAF6BAgIEE4",
+  "top_stories_serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=br&google_domain=google.com.br&hl=pt&location=Brazil&q=bitcoin&tbm=nws",
+  "top_stories": [
+    {
+      "title": "Primeiro ETF de Bitcon e criptomoedas do mundo é aprovado e foi feito pela Brasileira Hashdex com a Nasdaq",
+      "link": "https://cointelegraph.com.br/news/brazilian-manager-hashdex-closes-partnership-with-nasdaq-and-gets-approval-to-launch-bitcoin-etf-and-cryptocurrencies",
+      "source": "Cointelegraph Brasil",
+      "date": "10 horas atrás",
+      "thumbnail": "data:image/jpeg;base64,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"
+    },
+    {
+      "title": "Forbes: Bitcoin pode sofrer grande queda até sexta-feira",
+      "link": "https://www.criptofacil.com/forbes-bitcoin-pode-sofrer-grande-queda-ate-sexta-feira/",
+      "source": "CriptoFacil",
+      "date": "11 horas atrás",
+      "thumbnail": "data:image/jpeg;base64,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"
+    },
+    {
+      "title": "Criptopílulas: novo banco digital permite pagar em reais e em bitcoins pelo Telegram",
+      "link": "https://valorinveste.globo.com/mercados/cripto/noticia/2020/09/21/criptopilulas-novo-banco-digital-permite-pagar-em-reais-e-em-bitcoins-pelo-telegram.ghtml",
+      "source": "Valor Investe",
+      "date": "22 horas atrás",
+      "thumbnail": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHcA1AMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAADBAACBQEGB//EADkQAAICAgAEBAIIBQMFAQAAAAECAAMEEQUSITEGQVFhE3EUFSIygZGhwUJSYnKxI9HhJDOS8PEH/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAIhEBAQADAAICAgMBAAAAAAAAAAECAxESITFBBBMiUYFC/9oADAMBAAIRAxEAPwDxQx9HQMaxsKx3AUE+8DRanMOab+Fn1UhTygj3l1nOLYvBshl2Ebt5wr8MyqgNqde00q+PqqjoNempLOPoV7AE9zI9tOYsa3HyEHZonbkWrZyc0e4hxk2/ZUADznkvEGRkbHwmIDA9VjkRbPpsXZDt3P6xcsxPWZXh7PpxSwzG5Tzb23nPQZXEOG5TJ8G2pj56Indq/Fw2YyzKOfPZljlzhPlnQkdzK8ZcXnpOn100YszKilrCFAGyT01I36Lq537GGyZqiuWFUo2ZQiqQzWcx0vwxv9e0vXl1Pd8IqyNon7YAEzmrKzvPS/PHvENUqafaNIyOvMjK6+qnYEtybEm42Tti5ZWc1PtF7KfaazVxeyqQtj2Ve0XeuattcVsSBxnMmpTljbpAsNSaozwdGbiWMtaM7mwaVFLE/IDqZ75OF8WuUlOFZ5A33x2X9CBPCcDzbeHcWxMuhVa2qwMocbE+gt/+g8Z/hXEX+2k/uZjnJ32215WT0yMpLKGIyKrKW/ltQofyIiTsJtZXjXjWUpruvpKkfdONWR+oM8+xa12bSgsSTrQHX28pnz+mvn/aNqCIh1od+i9YYcMzGH2Me4/21sf2jTaQO9yQrUsrFWOiO4PSdgXSCmHrcjsTFlh6xOx55r4repkNra7mCEtqA6nMT3nSi2DTqGHuJAJcdOvlHwi9+JiJWXapQB38p5+nGXMzSUr5aFPWP8ZyWvsXFo2zN0IH+JtYvC1wuHKh63N3+c6fxtPnl5X4idmdxnPupQofl191PL3mV4nZkrqUH7LN1HrN+usIgVR0EwPFY+zT/d+0jftuzK36PVjMORp8LqP1HSdDl5Rrp6zIzN5PFacIeZHxCPLzIm/w1h9Q4af0gzA4H/reIWJPU85HznZsztyw1/THDGSZZNziXFq+DU049WIWq6DmHRR7fOO1ZNObTXkY4AVx1HoYDOxlycG2mwA7U7+czvBjO+Fkq3UK6kfjJ/dduWWvKevr/FfrmGMzny2WSAsSPFOkE6TznYzLa/aJ21+02LEEWsr3EcY1lcXask6AmtZT7QJXkIOu3rJMjiV/9bQrA6LgH856lsGsb5SdRLGy8a566bMZedmAV17g77za+qm6/FyLCeb+HoNTm3W9dOnnPbLNZQ6Wvn+RmtwvjXE+HIK8WsfDB3yOFYfqIajhdNbc1dzuxGuVvKaVGCDr7MnG2qsnUXxlx8j7OPip8q5V/FPidxpLq03/AC1j/aP14A12jKYC6+6Jfankecs4n4jubnfJrY+pqX/aSbOXhat6Ejp5GSIny0CHr7QSwqztecMJbUqstAOgRbiOT9Gx2bzPQD1jQEzOM4ll7KQrMuvKHTnyN4PxFvzjmX9WB0N+vrPT8QotNwZQpr7Ab7fpPIcN+ncOBGOpIJ3plM0zxfi7qAcZTr+kzv1b9H6phkxz1bLn5Ro5QfEoNr18wA3pTMPiFS8W4dVkLalV7I91WMw2XRTonfYdpocRs4hkYC/ZX4jDTKq/d+UAmFlY3Ca8ampbLuRqxcw+3UrHZAM5Pyf13n6m+ny/7N8KCvwXBI7lAf0nma3+q/EIZ+iiw716H/7PW8NwBiU1V/Fdwi6AbXSK8c4GM/V1YAtHTr/F/wAy9u7uUyx+uJw1/wAbL9nMxbnw3OMvM9o0p3236znBcD6sw/ozf91zzOf/AH8IjwbG4xQFx2YfBU936kfL1noEQKOuy3mTNst+nlzwn8qjHVs7Mcr6ihEG4hmg37TgdfCtiwDCM2RdoqcgDrFL16RyztE7pKoDicqZ+OzdFFqkn8Z7Kzi3DQxX6dUCP5tieKY8rBh3HWKZd2kNxG+Y61uYbJ2x0aueNr6RwzPwcrINWPk1W2cu+VG2dTdpUdp8t8BBvrtbfJqLAP8AyA/afUKX6SeePo7eucR4nicLx/i5TaHXlVRtm9gIlwbxdwzimUMWs2VZDDa12gAn2HXvMzxzwpeIYdd6cwvQ8ocemiQD+M8D4Rwr28W4aaO6bC7nYOgAfOVJ1GV4+z5evi9vKciuXf8A6g3/ACyRB8qWFWCEKk7XnDCWAlFhBA1gIasde8EsMneAHUQgEovaEESllEuBKrCAQNZRNHGRbMIBgmhYdO3kSUHr21uZ6y4gqNTWPXcdCoEcrc3mD9jeuvu0Rv5Rc/w+Xk39nl9PKBnSYlOGCs7Qm4Kw9IHALIvYYawwPJz2KhOgSAYqrhWxopYfymx9DqcE6cjmB79h0/bcUemhLLgyqOV9AMxHTp/zI6rjIub7DH2Mzstm+iKSp1zd5qcRYHfLy6Cfwa1MjMZPoQA+8G/STfdafGF43/Arj6woXrs1Wnfl96fRfjiml7CNhVJnzTwSwXiGMd9fh2DX4z13iTObE4U3I3KznRPsBs/sPxkX3kUvMXnuLeK8t7Xq+JvkbXTsB7amJ9bZBzUyq7Cl1Z2jr5HzmZzFnYt3Pczu9TVhb769vT44repfp2OwvUaJp1yt7+3yknhS0knwivOvRiEEGphFnQ5RVhFggZdTA6MIVO8Aphqz1gIaWXWCUy4MRirCCBBl1MFQZZbeoIGd3Epfc7uD3O7gcQmBcy5MA7QXA7DAOxU8wJBB2CO8JY0VseKqGKWZFbM+QV52LaIJJIHf9YO7BrrblfmsYnWl6eY9veUpfKtDVYqhmAZj0GwCNHv+E6MPJva1LsrRVuVkB5t7166HnIqmZxFEqblTeivbe5iZQLJoDZmzxTGGI6ors212SRMizuPlIvy0xncLGt4Q6cWxlPcV2bE1vGC5eVmYuFjpzB12o35k9f8AH6TH8LA18dqUgghX6H+2b/Esh8Ljwy9syV4zHR1ofLp6/wCZNvtNxnHjc6tKsuxamBQHSsDvYHnF+sKXLsSx2T16znczVzhOADoEkaHUidmlhcLuzKfi10sV3rfrJJ8orwp8QiwYhFnQ5uCCXEGJcGBiLD1xdTDoYAysIIFTLiIxQZcGCBl1MFSCqZbcGDITEa25wtBkzhMFR1mgWaXMExgsGwxeyHciLWNJq5HcbJOK1jqgYlSo2ex9ZbfEMsO1ASpHJb7Oh30Oh766D8ola0MnFraaK6VrUqg7nv33IpkuI1fCfRtNjdQ2/IgkdJlWjYI9o7k2taxaw7PrE3OtnUnL5aY/FP8ABMqunjVeTkErXptnz+7qbniTiOBk8JtWm1Xt2Ao11HXrPKUjeUm++jsHyh8ureO2vLrqLntnnWd13pd7PYCcTmPXZh8FOe8kj7o2NwC9HI/q12lsX0PgVTU8Hw12TusN0Pr1knmqcvMx6lqqy7FRRoDe9STOxrL6GWEWCBlgZ1uMXcsIMSwPWAFUw1Z6xcQyRGZUwgMADLgwMdTLBoIMJ3mEShgZ0npF+eW5+kDgm5UkQZeVLQXF2aBdpxmgmaJUVdou5l3aAcxVcCsaWtx6qUVrrvvdQqjuIKwxZz+UmqcyXrZt1JyLrtuA5Q2+behrep1zLjlDj+5T27DfUyL8nPgKlHrzgtwIcdwflHnXmUrF7ra7+MWW1HaOxKnWt9Iy0SMmZi2BMlTrox5TAW9LnP8AX+8Lkoa72AHnzDUFYebI16v+8ti152W6SSGgwlhJJOlyLiWEkkDEUQyCSSAE5pOeSSJToeTnMkkDdBnQ0kkDiblS07JBYbNBM07JFVwBzAOZJJKwHi79pySIwX67EpkEK40PKdkkX5OfFTFO8lCR5/tNI9pySJGRO9KPpPNa7v5fCQ6/NiP8RTSHO0FKgtsAtvX4ySSoyrT55JJJKn//2Q=="
+    },
+    {
+      "title": "O maior fundo soberano do mundo revela ter quase 600 Bitcoin",
+      "link": "https://cointelegraph.com.br/news/worlds-largest-sovereign-wealth-fund-indirectly-holds-almost-600-bitcoin",
+      "source": "Cointelegraph",
+      "date": "1 dia atrás",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmG7tz4YNRAaISXF0DHg-W5nVzwOKPsE_XscdxirdwfZOhx03o-BonuEDu&usqp=CAI&s"
+    },
+    {
+      "title": "Banho de sangue: criptomoedas afundam nesta segunda-feira",
+      "link": "https://www.criptofacil.com/banho-sangue-criptomoedas-afundam-nesta-segunda-feira/",
+      "source": "CriptoFacil",
+      "date": "19 horas atrás",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrKL89hfA-FEQB08d5UaCXG8jRPFbAbB3BXquYHA3qxZowADNvuAf_47VY&usqp=CAI&s"
+    },
+    {
+      "title": "Hackers atacam servidores do Ministério Público Federal e trocar acesso por Bitcoin na DeepWeb",
+      "link": "https://cointelegraph.com.br/news/hackers-attack-federal-public-ministry-servers-and-exchange-access-for-bitcoin-on-deepweb",
+      "source": "Cointelegraph",
+      "date": "5 horas atrás",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgGpcLUUxrFBBs-ouquHJdlMfXI_Y3AvmrrnlRwW5otWC0Lvvpk3_yaefp&usqp=CAI&s"
+    },
+    {
+      "title": "O que vem por aí esta semana no mercado...",
+      "link": "https://www.moneytimes.com.br/o-que-vem-por-ai-esta-semana-no-mercado-cripto/",
+      "source": "Money Times",
+      "date": "20 horas atrás",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjiDiFKyknKQ_EcsaYiX0mdSN7qQYgWWyaOLZa236h7WBWYph66IUmLubu&usqp=CAI&s"
+    },
+    {
+      "title": "Blockchain do bitcoin atinge 300 GB de tamanho",
+      "link": "https://portaldobitcoin.uol.com.br/blockchain-do-bitcoin-atinge-300-gb-de-tamanho/",
+      "source": "Portal do Bitcoin - Uol",
+      "date": "19 horas atrás",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCqvqnrU8cTRzOym0GOyLe6t5a4JqpAeF_zwN1xIAT9pggVNT8uBg37w7B&usqp=CAI&s"
+    },
+    {
+      "title": "XP passa a negociar fundo 100% em bitcoin para investidores profissionais",
+      "link": "https://valorinveste.globo.com/mercados/cripto/noticia/2020/09/21/xp-passa-a-negociar-fundo-100percent-em-bitcoin-para-investidores-profissionais.ghtml",
+      "source": "Valor Investe",
+      "date": "22 horas atrás",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwTlc_KB_cusFnLwa_9IREN8om1XAwq3GEld-B2zzU&usqp=CAI&s"
+    },
+    {
+      "title": "'Espiral da morte' do Bitcoin está a caminho depois de enorme ajuste de dificuldade?",
+      "link": "https://cointelegraph.com.br/news/is-a-bitcoin-death-spiral-imminent-following-yesterday-s-massive-difficulty-adjustment",
+      "source": "Cointelegraph Brasil",
+      "date": "12 horas atrás",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN7A4vNmnDD4xqvzc3OZoGcJ5L7w6n8coh9VPKUy0ZSUQF9TYFlXtYUJKx&usqp=CAI&s"
+    }
+  ],
+  "related_questions": [
+    {
+      "question": "O que é Bitcoin é como funciona?",
+      "snippet": "O Bitcoin é basicamente um arquivo digital que existe online e funciona como uma moeda alternativa. ... Todas as moedas e todas as transações feitas com elas ficam registradas em um índice global –conhecido como \"blockchain\", uma espécie de banco de dados descentralizado que usa criptografia para registrar as transações.11 de dez. de 2017",
+      "title": "Bitcoin: o que é e como funciona a moeda virtual - 11/12/2017 - UOL ...",
+      "link": "https://economia.uol.com.br/noticias/bbc/2017/12/11/bitcoin-o-que-e-e-como-funciona-a-moeda-virtual.htm",
+      "displayed_link": "economia.uol.com.br › noticias › bbc › bitcoin-o-que-e-e..."
+    },
+    {
+      "question": "O que é Bitcoin para que serve?",
+      "snippet": "O Bitcoin é um sistema ponto a ponto (P2P ou peer-to-peer) de dinheiro eletrônico. ... Para transferir dinheiro de uma pessoa para outra, uma transação bancária comum precisa ser processada pelos computadores de um banco e até mesmo do Banco Central.28 de jan. de 2017",
+      "title": "Bitcoin: o que é e por que ele é importante para o marketing de ...",
+      "link": "https://rockcontent.com/br/blog/bitcoin/",
+      "displayed_link": "rockcontent.com › blog › bitcoin"
+    },
+    {
+      "question": "Qual é o rendimento do Bitcoin?",
+      "snippet": "Após um ano, esses empréstimos vão gerar um rendimento entre 7 e 15%. Já que o empréstimo em margem acontece ao longo de um dia, o investidor obtém juros cumulativos diários. A uma taxa de 0,03% por dia (a taxa padrão na BitMEX, por exemplo), a taxa anualizada é de 10,95%.4 de jul. de 2020",
+      "title": "Como obter e aumentar seu rendimento com bitcoin e demais ...",
+      "link": "https://www.moneytimes.com.br/como-obter-e-aumentar-seu-rendimento-com-bitcoin-e-demais-criptoativos/",
+      "displayed_link": "www.moneytimes.com.br › como-obter-e-aumentar-seu-r..."
+    },
+    {
+      "question": "Qual o site oficial do Bitcoin?",
+      "snippet": "Bitcoin.org é um projeto financiado pela comunidade, doações são apreciadas e usadas para melhorar o site. Bitcoin.org precisa da sua ajuda! Bitcoin é uma rede de pagamento inovadora e um novo tipo de dinheiro.",
+      "title": "Bitcoin - Dinheiro P2P de código aberto",
+      "link": "https://bitcoin.org/pt_BR/",
+      "displayed_link": "bitcoin.org › pt_BR"
+    }
+  ],
+  "answer_box": {
+    "type": "conversor_de_moeda",
+    "result": "56.159,96 Real brasileiro"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Mercado Bitcoin: Vem pra nova economia digital",
+      "link": "https://www.mercadobitcoin.com.br/",
+      "displayed_link": "www.mercadobitcoin.com.br",
+      "snippet": "Bem vindo ao Mercado Bitcoin. A maior Plataforma de Criptomoedas e Ativos Digitais da América Latina. Abra sua conta e reinvente-se com a nova economia ...",
+      "cached_page_link": "https://webcache.googleusercontent.com/search?q=cache:PRR_UXmkeEEJ:https://www.mercadobitcoin.com.br/+&cd=20&hl=pt-BR&ct=clnk&gl=br",
+      "related_pages_link": "https://www.google.com.br/search?hl=pt&gl=br&q=related:https://www.mercadobitcoin.com.br/+bitcoin&sa=X&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQHzATegQIARAF"
+    },
+    {
+      "position": 2,
+      "title": "Compra e venda de Bitcoin | Mercado Bitcoin",
+      "link": "https://www.mercadobitcoin.com.br/o-que-e-bitcoin",
+      "displayed_link": "www.mercadobitcoin.com.br › o-que-e-bitcoin",
+      "snippet": "Compra e venda de Bitcoin (BTC) na maior empresa de moedas digitais do Brasil. Veja tudo que você precisa saber para investir em Bitcoin.",
+      "cached_page_link": "https://webcache.googleusercontent.com/search?q=cache:kC7ZIDxVATMJ:https://www.mercadobitcoin.com.br/o-que-e-bitcoin+&cd=21&hl=pt-BR&ct=clnk&gl=br"
+    },
+    {
+      "position": 3,
+      "title": "O que é Bitcoin? - Foxbit",
+      "link": "https://foxbit.com.br/o-que-e-bitcoin/",
+      "displayed_link": "foxbit.com.br › o-que-e-bitcoin",
+      "snippet": "Conheça Bitcoin, a moeda digital descentralizada e que não necessita de terceiros para funcionar ...",
+      "rich_snippet": {
+        "top": {
+          "detected_extensions": {
+            "de_abr_de": 3
+          },
+          "extensions": [
+            "3 de abr. de 2019",
+            "Vídeo enviado por Foxbit"
+          ]
+        }
+      }
+    },
+    {
+      "position": 4,
+      "title": "Bitcoin - Dinheiro P2P de código aberto",
+      "link": "https://bitcoin.org/pt_BR/",
+      "displayed_link": "bitcoin.org › pt_BR",
+      "snippet": "Bitcoin é uma rede inovadora de pagamento e um novo tipo de moeda. Encontre tudo o que você precisa saber e comece com Bitcoin em bitcoin.org.",
+      "cached_page_link": "https://webcache.googleusercontent.com/search?q=cache:aD8uxnXTe2YJ:https://bitcoin.org/pt_BR/+&cd=23&hl=pt-BR&ct=clnk&gl=br",
+      "related_pages_link": "https://www.google.com.br/search?hl=pt&gl=br&q=related:https://bitcoin.org/pt_BR/+bitcoin&sa=X&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQHzAWegQIEBAH"
+    },
+    {
+      "position": 5,
+      "title": "O que é Bitcoin? Qual a cotação e como funciona o Bitcoin ...",
+      "link": "https://cointimes.com.br/o-que-e-bitcoin-cotacao-e-como-funciona/",
+      "displayed_link": "cointimes.com.br › Criptomoedas › Bitcoin",
+      "snippet": "O que é Mineração de Bitcoins? Block quem? O que é Blockchain? Qual é o diferencial do Bitcoin? Bitcoin é seguro? Como investir em Bitcoin?",
+      "cached_page_link": "https://webcache.googleusercontent.com/search?q=cache:AF-r6a1_29MJ:https://cointimes.com.br/o-que-e-bitcoin-cotacao-e-como-funciona/+&cd=24&hl=pt-BR&ct=clnk&gl=br"
+    },
+    {
+      "position": 6,
+      "title": "BTC (Bitcoin) | InfoMoney",
+      "link": "https://www.infomoney.com.br/cotacoes/bitcoin-btc/",
+      "displayed_link": "www.infomoney.com.br › cotacoes › bitcoin-btc",
+      "snippet": "Acompanhe a cotação diária do BTC (Bitcoin): preço, gráficos, histórico, análises, notícias, fatos relevantes e mais.",
+      "sitelinks": {
+        "list": [
+          {
+            "date": "Mín — Máx (Dia)‎: ‎62380 - 65410"
+          }
+        ]
+      },
+      "rich_snippet": {
+        "bottom": {
+          "detected_extensions": {
+            "variação_dia_‎_‎_mín_máx_dia_‎_‎": 4.13,
+            "unknown": 65410
+          },
+          "extensions": [
+            "Variação (Dia)‎: ‎+4.13%Mín — Máx (Dia)‎: ‎62380",
+            "65410"
+          ]
+        }
+      },
+      "cached_page_link": "https://webcache.googleusercontent.com/search?q=cache:I8pY0B4J0GEJ:https://www.infomoney.com.br/cotacoes/bitcoin-btc/+&cd=25&hl=pt-BR&ct=clnk&gl=br"
+    },
+    {
+      "position": 7,
+      "title": "Forbes: Bitcoin pode sofrer grande queda até sexta-feira",
+      "link": "https://www.criptofacil.com/forbes-bitcoin-pode-sofrer-grande-queda-ate-sexta-feira/",
+      "displayed_link": "www.criptofacil.com › forbes-bitcoin-pode-sofrer-gran...",
+      "date": "12 horas atrás",
+      "snippet": "O preço do Bitcoin sofreu uma dura queda nesta segunda-feira (21). Algumas quedas foram ainda mais duras para algumas das maiores ...",
+      "cached_page_link": "https://webcache.googleusercontent.com/search?q=cache:qSl6F0d3C5EJ:https://www.criptofacil.com/forbes-bitcoin-pode-sofrer-grande-queda-ate-sexta-feira/+&cd=26&hl=pt-BR&ct=clnk&gl=br"
+    },
+    {
+      "position": 8,
+      "title": "Bitcoin – Wikipédia, a enciclopédia livre",
+      "link": "https://pt.wikipedia.org/wiki/Bitcoin",
+      "displayed_link": "pt.wikipedia.org › wiki › Bitcoin",
+      "snippet": "Bitcoin (símbolo: ₿; abrev ISO 4217: BTC ou XBT) é uma criptomoeda descentralizada ou um dinheiro eletrônico para transações ponto-a-ponto (peer-to-peer ...",
+      "sitelinks": {
+        "list": [
+          {
+            "date": "Plural‎: ‎bitcoins"
+          },
+          {
+            "date": "Moedas‎: ‎Saídas não gastas de transações de..."
+          }
+        ]
+      },
+      "rich_snippet": {
+        "bottom": {
+          "extensions": [
+            "Administração‎: ‎Descentralizado;",
+            "Plural‎: ‎bitcoins",
+            "Fabricante‎: ‎Não aplicável",
+            "Moedas‎: ‎Saídas não gastas de transações de..."
+          ]
+        }
+      },
+      "cached_page_link": "https://webcache.googleusercontent.com/search?q=cache:CfHtFvJVolAJ:https://pt.wikipedia.org/wiki/Bitcoin+&cd=37&hl=pt-BR&ct=clnk&gl=br",
+      "related_pages_link": "https://www.google.com.br/search?hl=pt&gl=br&q=related:https://pt.wikipedia.org/wiki/Bitcoin+bitcoin&sa=X&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQHzAkegQIAhAH"
+    }
+  ],
+  "related_searches": [
+    {
+      "query": "mercado bitcoin",
+      "link": "https://www.google.com.br/search?hl=pt&gl=br&q=mercado+bitcoin&sa=X&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQ1QIoAHoECCwQAQ"
+    },
+    {
+      "query": "bitcoin preço",
+      "link": "https://www.google.com.br/search?hl=pt&gl=br&q=bitcoin+pre%C3%A7o&sa=X&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQ1QIoAXoECCwQAg"
+    },
+    {
+      "query": "bitcoin gráfico",
+      "link": "https://www.google.com.br/search?hl=pt&gl=br&q=bitcoin+gr%C3%A1fico&sa=X&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQ1QIoAnoECCwQAw"
+    },
+    {
+      "query": "bitcoin login",
+      "link": "https://www.google.com.br/search?hl=pt&gl=br&q=bitcoin+login&sa=X&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQ1QIoA3oECCwQBA"
+    },
+    {
+      "query": "bitcoin usd",
+      "link": "https://www.google.com.br/search?hl=pt&gl=br&q=bitcoin+usd&sa=X&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQ1QIoBHoECCwQBQ"
+    },
+    {
+      "query": "bitcoin cash",
+      "link": "https://www.google.com.br/search?hl=pt&gl=br&q=bitcoin+cash&sa=X&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQ1QIoBXoECCwQBg"
+    },
+    {
+      "query": "bitcoin dólar",
+      "link": "https://www.google.com.br/search?hl=pt&gl=br&q=bitcoin+d%C3%B3lar&sa=X&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQ1QIoBnoECCwQBw"
+    },
+    {
+      "query": "comprar bitcoin",
+      "link": "https://www.google.com.br/search?hl=pt&gl=br&q=comprar+bitcoin&sa=X&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQ1QIoB3oECCwQCA"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://www.google.com.br/search?q=bitcoin&hl=pt&gl=br&ei=XK9pX77mHMS4-gTpk7bgAw&start=10&sa=N&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQ8NMDegQIGhBH",
+    "other_pages": {
+      "2": "https://www.google.com.br/search?q=bitcoin&hl=pt&gl=br&ei=XK9pX77mHMS4-gTpk7bgAw&start=10&sa=N&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQ8tMDegQIGhA1",
+      "3": "https://www.google.com.br/search?q=bitcoin&hl=pt&gl=br&ei=XK9pX77mHMS4-gTpk7bgAw&start=20&sa=N&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQ8tMDegQIGhA3",
+      "4": "https://www.google.com.br/search?q=bitcoin&hl=pt&gl=br&ei=XK9pX77mHMS4-gTpk7bgAw&start=30&sa=N&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQ8tMDegQIGhA5",
+      "5": "https://www.google.com.br/search?q=bitcoin&hl=pt&gl=br&ei=XK9pX77mHMS4-gTpk7bgAw&start=40&sa=N&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQ8tMDegQIGhA7",
+      "6": "https://www.google.com.br/search?q=bitcoin&hl=pt&gl=br&ei=XK9pX77mHMS4-gTpk7bgAw&start=50&sa=N&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQ8tMDegQIGhA9",
+      "7": "https://www.google.com.br/search?q=bitcoin&hl=pt&gl=br&ei=XK9pX77mHMS4-gTpk7bgAw&start=60&sa=N&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQ8tMDegQIGhA_",
+      "8": "https://www.google.com.br/search?q=bitcoin&hl=pt&gl=br&ei=XK9pX77mHMS4-gTpk7bgAw&start=70&sa=N&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQ8tMDegQIGhBB",
+      "9": "https://www.google.com.br/search?q=bitcoin&hl=pt&gl=br&ei=XK9pX77mHMS4-gTpk7bgAw&start=80&sa=N&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQ8tMDegQIGhBD",
+      "10": "https://www.google.com.br/search?q=bitcoin&hl=pt&gl=br&ei=XK9pX77mHMS4-gTpk7bgAw&start=90&sa=N&ved=2ahUKEwi-hLOApvzrAhVEnJ4KHemJDTwQ8tMDegQIGhBF"
+    }
+  },
+  "serpapi_pagination": {
+    "current": 1,
+    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=br&google_domain=google.com.br&hl=pt&location=Brazil&q=bitcoin&start=10",
+    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=br&google_domain=google.com.br&hl=pt&location=Brazil&q=bitcoin&start=10",
+    "other_pages": {
+      "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=br&google_domain=google.com.br&hl=pt&location=Brazil&q=bitcoin&start=10",
+      "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=br&google_domain=google.com.br&hl=pt&location=Brazil&q=bitcoin&start=20",
+      "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=br&google_domain=google.com.br&hl=pt&location=Brazil&q=bitcoin&start=30",
+      "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=br&google_domain=google.com.br&hl=pt&location=Brazil&q=bitcoin&start=40",
+      "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=br&google_domain=google.com.br&hl=pt&location=Brazil&q=bitcoin&start=50",
+      "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=br&google_domain=google.com.br&hl=pt&location=Brazil&q=bitcoin&start=60",
+      "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=br&google_domain=google.com.br&hl=pt&location=Brazil&q=bitcoin&start=70",
+      "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=br&google_domain=google.com.br&hl=pt&location=Brazil&q=bitcoin&start=80",
+      "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=br&google_domain=google.com.br&hl=pt&location=Brazil&q=bitcoin&start=90"
+    }
+  }
+}
