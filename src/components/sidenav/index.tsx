@@ -43,6 +43,6 @@ const Sidenav: React.FC = () => {
       </NavbarContent>
     </Navbar>
   );
-}
+};
 
 export default Sidenav;
