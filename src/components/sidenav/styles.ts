@@ -45,10 +45,13 @@ export const NavbarContent = styled.div`
     width: 100%;
   }
 
-  a {
+  button {
     padding: 5px;
     display: flex;
     width: 100%;
+    height: 30px;
+    background: none;
+    border: none;
     align-items: center;
     justify-content: center;
     color: #6078eb;
