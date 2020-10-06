@@ -16,7 +16,7 @@ const Routes: React.FC = () => (
     <Route path="/dashboard" exact component={Dashboard} isPrivate />
     <Route path="/search" exact component={Search} isPrivate />
     <Route path="/results" exact component={Results} isPrivate />
-    <Route path="/results/:id" exact component={ResultQuery} isPrivate />
+    <Route path="/results/:id" component={ResultQuery} isPrivate />
     <Route path="/settings" exact component={Settings} isPrivate />
   </Switch>
 );
