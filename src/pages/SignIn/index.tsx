@@ -1,6 +1,9 @@
 import React, { FormEvent, useState, ChangeEvent } from 'react';
 import { FiMail, FiLock } from 'react-icons/fi';
 
+import { toast } from 'react-toastify';
+import BeatLoader from 'react-spinners/BeatLoader';
+
 import { Container, Content, Background } from './styles';
 import logoImg from '../../assets/logo.png';
 import Input from '../../components/input';
@@ -14,10 +17,14 @@ const SignIn: React.FC = () => {
     password: '',
   });
 
+  const [isLoading, setIsLoading] = useState(false);
+
   const { signIn } = useAuth();
 
   async function handleSubmit(event: FormEvent) {
     event.preventDefault();
+
+    setIsLoading(true);
 
     try {
       await signIn({
@@ -25,8 +32,21 @@ const SignIn: React.FC = () => {
         password: formData.password,
       });
     } catch (e) {
+      toast.warn('Email/Senha incorretos', {
+        position: 'top-right',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        className: 'toast-signin',
+      });
+
       console.error(e);
     }
+
+    setIsLoading(false);
   }
 
   function handleInputChange(event: ChangeEvent<HTMLInputElement>) {
@@ -58,7 +78,9 @@ const SignIn: React.FC = () => {
             placeholder="Senha"
             onChange={handleInputChange}
           />
-          <Button type="submit">Logar</Button>
+          <Button type="submit">
+            {isLoading ? <BeatLoader size={15} color="#FFF" /> : 'Logar'}
+          </Button>
         </form>
       </Content>
       <Background />
