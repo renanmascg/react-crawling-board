@@ -10,9 +10,9 @@ import {
   ResultBody,
   ResultButtons,
 } from './styles';
-import Sidenav from '../../components/sidenav';
-import Input from '../../components/input';
-import Button from '../../components/button';
+import Sidenav from '../../core/components/sidenav';
+import Input from '../../core/components/input';
+import Button from '../../core/components/button';
 
 const Results: React.FC = () => {
   return (

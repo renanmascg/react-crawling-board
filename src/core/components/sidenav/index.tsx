@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FiHome, FiLogOut, FiSearch, FiSettings } from 'react-icons/fi';
 import { AiOutlineFileSearch } from 'react-icons/ai';
 import { Navbar, NavbarContent, Navitem } from './styles';
-import logoImg from '../../assets/logo.png';
+import logoImg from '../../../assets/logo.png';
 import { useAuth } from '../../hooks/AuthContext';
 
 const Sidenav: React.FC = () => {

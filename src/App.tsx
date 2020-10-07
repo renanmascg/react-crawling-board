@@ -7,7 +7,7 @@ import GlobalStyle from './styles/global';
 
 import Routes from './routes';
 
-import { AuthProvider } from './hooks/AuthContext';
+import { AuthProvider } from './core/hooks/AuthContext';
 
 const App: React.FC = () => (
   <>

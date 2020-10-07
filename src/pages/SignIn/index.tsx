@@ -6,10 +6,10 @@ import BeatLoader from 'react-spinners/BeatLoader';
 
 import { Container, Content, Background } from './styles';
 import logoImg from '../../assets/logo.png';
-import Input from '../../components/input';
-import Button from '../../components/button';
+import Input from '../../core/components/input';
+import Button from '../../core/components/button';
 
-import { useAuth } from '../../hooks/AuthContext';
+import { useAuth } from '../../core/hooks/AuthContext';
 
 const SignIn: React.FC = () => {
   const [formData, setFormData] = useState({
