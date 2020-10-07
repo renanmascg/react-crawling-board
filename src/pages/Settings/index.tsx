@@ -2,6 +2,7 @@ import React, { useState, useEffect, FormEvent, ChangeEvent } from 'react';
 import { AiFillCloseCircle } from 'react-icons/ai';
 import { css } from '@emotion/core';
 import PacmanLoader from 'react-spinners/PacmanLoader';
+import { toast } from 'react-toastify';
 import {
   Container,
   Content,
@@ -16,8 +17,11 @@ import Input from '../../core/components/input';
 import Button from '../../core/components/button';
 import GetUserSettingsService from '../../services/settings/getUserSettings';
 import IUserSettings from '../../core/dtos/IUserSettingsDTO';
+import SetNewUserSettingsService from '../../services/settings/setNewUserSettings';
 
 const Settings: React.FC = () => {
+  const setUserSettings = new SetNewUserSettingsService();
+
   // run on init function
   useEffect(() => {
     const getUserSettings = new GetUserSettingsService();
@@ -28,7 +32,33 @@ const Settings: React.FC = () => {
 
   const [tags, setTags] = useState<string>('');
   const [urls, setUrls] = useState<string>('');
-  const [settings, setSettings] = useState<IUserSettings>();
+  const [settings, setSettings] = useState<IUserSettings>({} as IUserSettings);
+
+  function showToast(value: boolean) {
+    if (value) {
+      toast.success('Configurações Atualizadas com Sucesso', {
+        position: 'top-right',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        className: 'toast-signin',
+      });
+    } else {
+      toast.warn('Algo inesperado ocorreu, tente novamente.', {
+        position: 'top-right',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        className: 'toast-signin',
+      });
+    }
+  }
 
   function handleAddChip(
     item: 'tag' | 'url',
@@ -51,6 +81,15 @@ const Settings: React.FC = () => {
     } else {
       setUrls('');
     }
+
+    setUserSettings
+      .exec({
+        tagsDefault: item === 'tag' ? array : settings.tagsDefault,
+        urlRemove: item === 'url' ? array : settings.urlRemove,
+      })
+      .then(val => {
+        showToast(val);
+      });
   }
 
   function handleRemoveChip(
@@ -63,11 +102,21 @@ const Settings: React.FC = () => {
 
     const newArray = array?.filter(val => val !== id);
 
+    console.log(item);
     setSettings({
       userId: settings?.userId || '',
       tagsDefault: item === 'tag' ? newArray : settings?.tagsDefault,
       urlRemove: item === 'url' ? newArray : settings?.urlRemove,
     });
+
+    setUserSettings
+      .exec({
+        tagsDefault: item === 'tag' ? newArray : settings.tagsDefault,
+        urlRemove: item === 'url' ? newArray : settings.urlRemove,
+      })
+      .then(val => {
+        showToast(val);
+      });
   }
 
   function handleAddTagOrUrl(event: ChangeEvent<HTMLInputElement>) {
