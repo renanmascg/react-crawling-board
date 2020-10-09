@@ -18,15 +18,20 @@ import Button from '../../core/components/button';
 import GetUserSettingsService from '../../services/settings/getUserSettings';
 import IUserSettings from '../../core/dtos/IUserSettingsDTO';
 import SetNewUserSettingsService from '../../services/settings/setNewUserSettings';
+import { useAuth } from '../../core/hooks/AuthContext';
 
 const Settings: React.FC = () => {
   const setUserSettings = new SetNewUserSettingsService();
+  const { signOut } = useAuth();
 
   // run on init function
   useEffect(() => {
     const getUserSettings = new GetUserSettingsService();
     getUserSettings.exec().then(userSettings => {
-      setSettings(userSettings);
+      if (userSettings.error && userSettings.status === 401) {
+        signOut();
+      }
+      setSettings(userSettings.userSettings);
     });
   }, []);
 
@@ -167,7 +172,7 @@ const Settings: React.FC = () => {
               })}
             </ChipsArea>
           </Form>
-          <Form>
+          <Form onSubmit={event => handleAddChip('url', event)}>
             <Title>
               <h1>Excluir URL</h1>
               <hr />

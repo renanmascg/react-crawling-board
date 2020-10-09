@@ -1,8 +1,14 @@
 import api from '../api';
 import IUserSettings from '../../core/dtos/IUserSettingsDTO';
 
+interface IResponseDTO {
+  error: boolean;
+  status: number;
+  userSettings: IUserSettings;
+}
+
 class GetUserSettingsService {
-  async exec(): Promise<IUserSettings> {
+  async exec(): Promise<IResponseDTO> {
     try {
       const token = localStorage.getItem('@Achaki:token');
 
@@ -12,12 +18,20 @@ class GetUserSettingsService {
         },
       });
 
-      return res.data;
+      return {
+        error: false,
+        status: 200,
+        userSettings: res.data,
+      };
     } catch (error) {
       return {
-        userId: '',
-        tagsDefault: [],
-        urlRemove: [],
+        error: true,
+        status: error.response.status,
+        userSettings: {
+          userId: '',
+          tagsDefault: [],
+          urlRemove: [],
+        },
       };
     }
   }
