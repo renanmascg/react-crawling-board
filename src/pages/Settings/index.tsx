@@ -1,8 +1,6 @@
 import React, { useState, useEffect, FormEvent, ChangeEvent } from 'react';
 import { AiFillCloseCircle } from 'react-icons/ai';
-import { css } from '@emotion/core';
 import PacmanLoader from 'react-spinners/PacmanLoader';
-import { toast } from 'react-toastify';
 import {
   Container,
   Content,
@@ -19,6 +17,7 @@ import GetUserSettingsService from '../../services/settings/getUserSettings';
 import IUserSettings from '../../core/dtos/IUserSettingsDTO';
 import SetNewUserSettingsService from '../../services/settings/setNewUserSettings';
 import { useAuth } from '../../core/hooks/AuthContext';
+import { showToast } from '../../utils/showToast';
 
 const Settings: React.FC = () => {
   const setUserSettings = new SetNewUserSettingsService();
@@ -33,37 +32,11 @@ const Settings: React.FC = () => {
       }
       setSettings(userSettings.userSettings);
     });
-  }, []);
+  }, [signOut]);
 
   const [tags, setTags] = useState<string>('');
   const [urls, setUrls] = useState<string>('');
   const [settings, setSettings] = useState<IUserSettings>({} as IUserSettings);
-
-  function showToast(value: boolean) {
-    if (value) {
-      toast.success('Configurações Atualizadas com Sucesso', {
-        position: 'top-right',
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        className: 'toast-signin',
-      });
-    } else {
-      toast.warn('Algo inesperado ocorreu, tente novamente.', {
-        position: 'top-right',
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        className: 'toast-signin',
-      });
-    }
-  }
 
   function handleAddChip(
     item: 'tag' | 'url',
@@ -93,7 +66,11 @@ const Settings: React.FC = () => {
         urlRemove: item === 'url' ? array : settings.urlRemove,
       })
       .then(val => {
-        showToast(val);
+        showToast({
+          value: val,
+          successMessage: 'Configurações Atualizadas com Sucesso',
+          errorMessage: 'Algo inesperado ocorreu, tente novamente.',
+        });
       });
   }
 
@@ -120,7 +97,11 @@ const Settings: React.FC = () => {
         urlRemove: item === 'url' ? newArray : settings.urlRemove,
       })
       .then(val => {
-        showToast(val);
+        showToast({
+          value: val,
+          successMessage: 'Configurações Atualizadas com Sucesso',
+          errorMessage: 'Algo inesperado ocorreu, tente novamente.',
+        });
       });
   }
 
