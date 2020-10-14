@@ -109,3 +109,7 @@ export const Form = styled.form`
     }
   }
 `;
+
+export const Center = styled.div`
+  margin: auto;
+`;

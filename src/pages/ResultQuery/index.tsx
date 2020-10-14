@@ -18,7 +18,7 @@ import {
   CardButtons,
   CardButton,
 } from './styles';
-import Sidenav from '../../components/sidenav';
+import Sidenav from '../../core/components/sidenav';
 import newsJson from '../../utils/return.json';
 
 interface IParams {

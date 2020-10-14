@@ -26,4 +26,11 @@ export default createGlobalStyle`
   button {
     cursor: pointer;
   }
+
+  .toast-signin {
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+  }
 `;

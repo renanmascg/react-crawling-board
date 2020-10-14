@@ -9,8 +9,8 @@ import {
   NewestResearch,
   Title,
 } from './styles';
-import Sidenav from '../../components/sidenav';
-import Info from '../../components/Info';
+import Sidenav from '../../core/components/sidenav';
+import Info from '../../core/components/Info';
 
 const Dashboard: React.FC = () => (
   <Container>

@@ -1,9 +1,9 @@
 import React from 'react';
 import { AiFillCloseCircle } from 'react-icons/ai';
 import { Container, Content, ChipsArea, Chip, Form } from './styles';
-import Sidenav from '../../components/sidenav';
-import Input from '../../components/input';
-import Button from '../../components/button';
+import Sidenav from '../../core/components/sidenav';
+import Input from '../../core/components/input';
+import Button from '../../core/components/button';
 
 const Search: React.FC = () => {
   return (
