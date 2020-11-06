@@ -157,3 +157,7 @@ export const ResultButtons = styled.div`
     }
   }
 `;
+
+export const Center = styled.div`
+  margin: auto;
+`;
