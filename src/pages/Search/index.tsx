@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-expressions */
 import React, { useState, useEffect, FormEvent, ChangeEvent } from 'react';
 import { AiFillCloseCircle } from 'react-icons/ai';
+import { BeatLoader } from 'react-spinners';
+import { toast } from 'react-toastify';
 import { Container, Content, ChipsArea, Chip, Form } from './styles';
 import Sidenav from '../../core/components/sidenav';
 import Input from '../../core/components/input';
@@ -8,9 +10,21 @@ import Button from '../../core/components/button';
 import { useAuth } from '../../core/hooks/AuthContext';
 import IsLoggedService from '../../services/security/isLogged';
 import ISendSearchDTO from '../../core/dtos/ISendSearchDTO';
+import SendEnterpriseToSearchService from '../../services/search/sendEnterpriseToSearch';
 
 const Search: React.FC = () => {
   const { signOut } = useAuth();
+  const sendEnterpriseInfo = new SendEnterpriseToSearchService();
+
+  const [isLoading, setIsLoading] = useState(false);
+
+  const [enterprises, setEnterprise] = useState<string>('');
+  const [tags, setTags] = useState<string>('');
+  const [search, setSearch] = useState<ISendSearchDTO>({
+    empresas: [],
+    tags: [],
+    useTagsDefault: false,
+  } as ISendSearchDTO);
 
   // run on init function
   useEffect(() => {
@@ -21,14 +35,6 @@ const Search: React.FC = () => {
       }
     });
   }, [signOut]);
-
-  const [enterprises, setEnterprise] = useState<string>('');
-  const [tags, setTags] = useState<string>('');
-  const [search, setSearch] = useState<ISendSearchDTO>({
-    empresas: [],
-    tags: [],
-    useTagsDefault: false,
-  } as ISendSearchDTO);
 
   function handleAddChip(
     item: 'tag' | 'emp',
@@ -73,9 +79,6 @@ const Search: React.FC = () => {
 
   function handleAddTagOrEnterprise(event: ChangeEvent<HTMLInputElement>) {
     const { name, value } = event.target;
-    if (value === '') {
-      return;
-    }
 
     if (name === 'tag') {
       setTags(value);
@@ -89,6 +92,66 @@ const Search: React.FC = () => {
       ...search,
       useTagsDefault: !search.useTagsDefault,
     });
+  }
+
+  async function handleSubmit() {
+    setIsLoading(true);
+
+    if (
+      search.empresas.length === 0 ||
+      (search.tags.length === 0 && search.useTagsDefault === false)
+    ) {
+      toast.warn(
+        'Empresas e tags são necessárias para realização da pesquisa',
+        {
+          position: 'top-right',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          className: 'toast-signin',
+        },
+      );
+      setIsLoading(false);
+      return;
+    }
+
+    const res = await sendEnterpriseInfo.exec(search);
+
+    if (res.error) {
+      toast.error(
+        'Algo inesperado ocorreu. Tente novamente em alguns instantes.',
+        {
+          position: 'top-right',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          className: 'toast-signin',
+        },
+      );
+    } else {
+      toast.success('Sua pesquisa foi submetida com sucesso !', {
+        position: 'top-right',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        className: 'toast-signin',
+      });
+
+      search.empresas = [];
+      search.tags = [];
+      search.useTagsDefault = false;
+    }
+
+    setIsLoading(false);
   }
 
   return (
@@ -157,7 +220,13 @@ const Search: React.FC = () => {
           </ChipsArea>
           <hr />
         </Form>
-        <Button>Enviar Pesquisa</Button>
+        <Button onClick={handleSubmit}>
+          {isLoading ? (
+            <BeatLoader size={15} color="#FFF" />
+          ) : (
+            'Enviar Pesquisa'
+          )}
+        </Button>
       </Content>
     </Container>
   );
