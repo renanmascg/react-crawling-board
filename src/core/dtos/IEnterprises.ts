@@ -3,6 +3,7 @@ export default interface IEnterprisesDTO {
 }
 
 interface IEnterprise {
+  _id: string;
   userId: string;
   groupId: string;
   name: string;

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FiSearch } from 'react-icons/fi';
 import PacmanLoader from 'react-spinners/PacmanLoader';
+import { Link } from 'react-router-dom';
 import {
   Container,
   Content,
@@ -58,6 +59,7 @@ const Results: React.FC = () => {
           </SearchBar>
           <SearchResults>
             {searches.enterprises.map(ent => {
+              console.log(ent);
               return (
                 <Result>
                   <ResultTitle>
@@ -89,7 +91,12 @@ const Results: React.FC = () => {
                   <hr />
                   <ResultButtons>
                     <button type="button">CSV</button>
-                    <button type="button">Resultados</button>
+                    <Link
+                      to={`/results/${ent._id}`}
+                      style={{ textAlign: 'center', paddingTop: '10px' }}
+                    >
+                      Resultados
+                    </Link>
                   </ResultButtons>
                 </Result>
               );
