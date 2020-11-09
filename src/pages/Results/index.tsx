@@ -72,10 +72,6 @@ const Results: React.FC = () => {
                     </div>
                     <hr />
                     <div>
-                      <p>Número de Resultados: </p>
-                      <h3>{ent.resultNumber ?? 0}</h3>
-                    </div>
-                    <div>
                       <p>Numero de Tags: </p>
                       <h3>{ent.tags.length}</h3>
                     </div>
@@ -90,7 +86,9 @@ const Results: React.FC = () => {
                   </ResultBody>
                   <hr />
                   <ResultButtons>
-                    <button type="button">CSV</button>
+                    <button type="button" disabled>
+                      CSV
+                    </button>
                     <Link
                       to={`/results/${ent._id}`}
                       style={{ textAlign: 'center', paddingTop: '10px' }}

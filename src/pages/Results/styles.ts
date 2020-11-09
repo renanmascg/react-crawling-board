@@ -157,6 +157,10 @@ export const ResultButtons = styled.div`
     &:hover {
       background: ${shade(0.2, '#6078EB')};
     }
+
+    &:disabled {
+      background: lightgray;
+    }
   }
 `;
 
