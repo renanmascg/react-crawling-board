@@ -143,7 +143,8 @@ export const ResultButtons = styled.div`
     margin: 10px 5px 10px 5px;
   }
 
-  button {
+  button,
+  a {
     height: 50px;
     width: 120px;
     background: #6078eb;
@@ -151,9 +152,18 @@ export const ResultButtons = styled.div`
     border-radius: 10px;
     color: white;
     font-weight: 500;
+    text-align: center;
 
     &:hover {
       background: ${shade(0.2, '#6078EB')};
     }
+
+    &:disabled {
+      background: lightgray;
+    }
   }
+`;
+
+export const Center = styled.div`
+  margin: auto;
 `;
