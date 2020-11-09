@@ -11,7 +11,7 @@ class SendEnterpriseToSearchService {
     try {
       const token = localStorage.getItem('@Achaki:token');
 
-      const res = await api.post('/search', data, {
+      await api.post('/search', data, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
