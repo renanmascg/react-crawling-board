@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useRouteMatch } from 'react-router-dom';
 import { Pie, ChartComponentProps } from 'react-chartjs-2';
 import { GrDislike, GrLike } from 'react-icons/gr';
@@ -19,17 +19,37 @@ import {
   CardButton,
 } from './styles';
 import Sidenav from '../../core/components/sidenav';
-import newsJson from '../../utils/return.json';
+import { useAuth } from '../../core/hooks/AuthContext';
+import { IEnterprisesFullDTO } from '../../core/dtos/IEnterpriseFullInfo';
+import GetEnterpriseFullInfo from '../../services/search/getEnterpriseFullInfo';
+import UpdateOrganicResult from '../../services/search/updateOrganicResults';
 
 interface IParams {
   id: string;
 }
 
-const resultExample = newsJson.organic_results;
-
 const ResultQuery: React.FC = () => {
+  const updateOrganicResult = new UpdateOrganicResult();
+
+  const [results, setResults] = useState<IEnterprisesFullDTO>({
+    enterprises: [],
+  } as IEnterprisesFullDTO);
+
   const { id } = useRouteMatch<IParams>().params;
-  console.log(`=================> ${id}`);
+
+  const { signOut } = useAuth();
+
+  // run on init function
+  useEffect(() => {
+    const getUserResults = new GetEnterpriseFullInfo();
+    getUserResults.exec(id).then(searched => {
+      if (searched.error && searched.status === 401) {
+        signOut();
+      }
+
+      setResults(searched.enterprises);
+    });
+  }, [signOut, id]);
 
   const dataset = {
     datasets: [
@@ -59,6 +79,40 @@ const ResultQuery: React.FC = () => {
       maintainAspectRatio: false,
     },
   };
+
+  function handleGoodBadNews(
+    apiId: string,
+    organicId: string,
+    isGood: boolean,
+  ) {
+    updateOrganicResult
+      .exec({
+        apiId,
+        organicId,
+        isGood,
+      })
+      .then(res => {
+        if (res.error) {
+          console.log('ERRO OCURRED');
+          return;
+        }
+
+        console.log('acertou');
+
+        console.log(res.enterprise);
+
+        const ents = results.enterprises.map(ent => {
+          if (ent.apiId === apiId) {
+            return res.enterprise;
+          }
+          return ent;
+        });
+
+        setResults({
+          enterprises: [...ents],
+        });
+      });
+  }
 
   return (
     <Container>
@@ -95,35 +149,54 @@ const ResultQuery: React.FC = () => {
           <hr />
         </Title>
         <NewsCards>
-          {resultExample.map(result => {
-            return (
-              <Card>
-                <CardTitle href={result.link} target="__blank">
-                  {result.title}
-                </CardTitle>
-                <CardBody>
-                  <span>Snippet:</span>
-                  {result.snippet}
-                </CardBody>
-                <CardTags>
-                  <hr />
-                  <div>
-                    <p>Tags:</p>
-                    <p>QUEIMADAS</p>
-                    <p>ALIMENTAÇÃO</p>
-                    <p>QUEIMADAS</p>
-                  </div>
-                </CardTags>
-                <CardButtons>
-                  <CardButton type="button">
-                    <GrLike size={20} />
-                  </CardButton>
-                  <CardButton type="button">
-                    <GrDislike size={20} />
-                  </CardButton>
-                </CardButtons>
-              </Card>
-            );
+          {results.enterprises.map(ent => {
+            const cards = ent?.organic_result?.map(or => {
+              const tag = ent.search_parameters.q.substring(
+                ent.search_parameters.q.indexOf('+ "') + 3,
+                ent.search_parameters.q.length - 1,
+              );
+
+              return (
+                <Card
+                  positive={or.isGood !== null && or.isGood}
+                  negative={or.isGood !== null && !or.isGood}
+                >
+                  <CardTitle href={or.link} target="__blank">
+                    {or.title}
+                  </CardTitle>
+                  <CardBody>
+                    <span>Snippet:</span>
+                    {or.snippet}
+                  </CardBody>
+                  <CardTags>
+                    <hr />
+                    <div>
+                      <p>Tags:</p>
+                      <p>{tag}</p>
+                    </div>
+                  </CardTags>
+                  <CardButtons>
+                    <CardButton
+                      type="button"
+                      positive={or.isGood !== null && or.isGood}
+                      onClick={() => handleGoodBadNews(ent.apiId, or._id, true)}
+                    >
+                      <GrLike size={20} />
+                    </CardButton>
+                    <CardButton
+                      type="button"
+                      negative={or.isGood !== null && !or.isGood}
+                      onClick={() =>
+                        handleGoodBadNews(ent.apiId, or._id, false)}
+                    >
+                      <GrDislike size={20} />
+                    </CardButton>
+                  </CardButtons>
+                </Card>
+              );
+            });
+
+            return cards;
           })}
         </NewsCards>
       </Content>
