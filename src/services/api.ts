@@ -2,7 +2,7 @@ import axios from 'axios';
 import 'dotenv/config';
 
 const api = axios.create({
-  baseURL: 'http://localhost:3333',
+  baseURL: 'https://crawling-backend.herokuapp.com',
 });
 
 export default api;
